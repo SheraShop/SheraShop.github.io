@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Free Fire Diamond Top-Up</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(90deg, #ff8a00, #da1b60);
+            color: #fff;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px;
+            background: #000;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 24px;
+            color: #ffcc00;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.8);
+            /*border-radius: 8px;*/
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .price-section {
+            margin-bottom: 20px;
+        }
+
+        .package {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            margin: 5px 0;
+            background: #1c1c1c;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .package:hover {
+            background: #333;
+        }
+
+        .package input[type="radio"] {
+            display: none;
+        }
+
+        .package .diamond {
+            color: #ffcc00;
+            font-weight: bold;
+        }
+
+        .package .price {
+            color: #00ffcc;
+            font-weight: bold;
+        }
+
+        .package input[type="radio"]:checked + .diamond {
+            color: red;
+        }
+
+        .payment-section {
+            margin-bottom: 20px;
+        }
+
+        .copy-button {
+            background: #ffcc00;
+            color: #000;
+            border: none;
+            border-radius: 5px;
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        .input-section input {
+            width: 94%;
+            padding: 10px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+        }
+
+        .submit-button {
+            background: #da1b60;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 15px;
+            width: 100%;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .submit-button:hover {
+            background: #ff8a00;
+        }
+
+        .popup {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 80%;
+            max-width: 400px;
+            background: #fff;
+            color: #000;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            display: none;
+            z-index: 1000;
+        }
+
+        .popup h3 {
+            margin-bottom: 10px;
+        }
+
+        .popup button {
+            background: #da1b60;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .ngt {
+          color: yellow;
+        }
+        .ng {
+          width: 100px;
+        }
+        .txt {
+          width: 80%;
+          margin: 20px auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Free Fire Diamond Top-Up</h1>
+    </header>
+
+    <div class="container">
+        <div class="price-section">
+          <h2>Free Fire Uid Topup [BD SERVER]</h2>
+            <h3>Select Your Package:</h3>
+            <label class="package">
+                <input type="radio" name="diamond-package" value="26">
+                <span class="diamond">25 Diamond</span>
+                <span class="price">৳ 24</span>
+            </label>
+            <label class="package">
+                <input type="radio" name="diamond-package" value="42">
+                <span class="diamond">50 Diamond</span>
+                <span class="price">৳ 45</span>
+            </label>
+            <label class="package">
+                <input type="radio" name="diamond-package" value="76">
+                <span class="diamond">115 Diamond</span>
+                <span class="price">৳ 50</span>
+            </label>
+            <label class="package">
+                <input type="radio" name="diamond-package" value="151">
+                <span class="diamond">240 Diamond</span>
+                <span class="price">৳ 140</span>
+            </label>
+            <label class="package">
+                <input type="radio" name="diamond-package" value="226">
+                <span class="diamond">355 Diamond</span>
+                <span class="price">৳ 216</span>
+            </label>
+            <label class="package">
+                <input type="radio" name="diamond-package" value="300">
+                <span class="diamond">490 Diamond</span>
+                <span class="price">৳ 300</span>
+            </label>
+            <label class="package">
+                <input type="radio" name="diamond-package" value="300">
+                <span class="diamond">619 Diamond</span>
+                <span class="price">৳ 382</span>
+            </label>
+            <label class="package">
+                <input type="radio" name="diamond-package" value="300">
+                <span class="diamond">850 Diamond</span>
+                <span class="price">৳ 532</span>
+            </label>
+            <label class="package">
+                <input type="radio" name="diamond-package" value="300">
+                <span class="diamond">1240 Diamond</span>
+                <span class="price">৳ 765</span>
+            </label>
+            <label class="package">
+                <input type="radio" name="diamond-package" value="300">
+                <span class="diamond">2530 Diamond</span>
+                <span class="price">৳ 1530</span>
+            </label>
+            <label class="package">
+                <input type="radio" name="diamond-package" value="300">
+                <span class="diamond">5060 Diamond</span>
+                <span class="price">৳ 3060</span>
+            </label>
+            <label class="package">
+                <input type="radio" name="diamond-package" value="300">
+                <span class="diamond">10120 Diamond</span>
+                <span class="price">৳ 6120</span>
+            </label>
+            <label class="package">
+                <input type="radio" name="diamond-package" value="300">
+                <span class="diamond">12650 Diamond</span>
+                <span class="price">৳ 7650</span>
+            </label>
+            <label class="package">
+                <input type="radio" name="diamond-package" value="300">
+                <span class="diamond">WEEKLY LITE</span>
+                <span class="price">৳ 47</span>
+            </label>
+            <label class="package">
+                <input type="radio" name="diamond-package" value="300">
+                <span class="diamond">WEEKLY LITE 5x</span>
+                <span class="price">৳ 219</span>
+            </label>
+            <label class="package">
+                <input type="radio" name="diamond-package" value="300">
+                <span class="diamond">Weekly</span>
+                <span class="price">৳ 152</span>
+            </label>
+            <label class="package">
+                <input type="radio" name="diamond-package" value="300">
+                <span class="diamond">Monthly</span>
+                <span class="price">৳ 755</span>
+            </label>
+            <label class="package">
+                <input type="radio" name="diamond-package" value="300">
+                <span class="diamond">Level Up Pass</span>
+                <span class="price">৳ 152</span>
+            </label>
+        </div>
+
+        <div class="payment-section">
+            <h3>Payment Details:</h3>
+            <img src="https://payment.ffbazar.com/mobilebanklogo/nagad.png" class="ng">
+            <p class="ngt">Nagad ( <b>01971284285</b> ) <strong>(Send Money)</strong></p>
+            <button class="copy-button" onclick="copyNumber()">Copy Number</button>
+        </div>
+
+        <div class="input-section">
+            <input type="text" id="player-id" placeholder="Player ID (UID)" required>
+            <input type="text" id="sender-number" placeholder="Sender Number" required>
+            <input type="text" id="transaction-id" placeholder="Transaction ID" required>
+        </div>
+
+        <button class="submit-button" onclick="submitDetails()">Buy Now</button>
+        <br><br>
+        <p>Contact us:</p>
+          <p>Whatsapp number 01616463324</p>
+    </div>
+
+    <div class="popup" id="popup">
+        <h3>Submission Successful</h3>
+        <p>Your details have been submitted. Please wait for confirmation.</p>
+        <button onclick="closePopup()">OK</button>
+    </div>
+    <div class="txt">
+<p>শুধুমাত্র Bangladesh সার্ভারে ID Code দিয়ে টপ আপ হবে।
+Player ID Code ভুল দিয়ে Diamond না পেলে কর্তৃপক্ষ দায়ী নয় ।
+Order কমপ্লিট হওয়ার পরেও আইডিতে ডাইমন্ড না গেলে চেক করার জন্য ID Pass দিতে হবে।
+অর্ডার Cancel হলে কি কারণে তা Cancel হয়েছে তা অর্ডার হিস্টোরিতে দেওয়া থাকে অনুগ্রহ পুর্বক দেখে পুনরায় সঠিক তথ্য দিয়ে অর্ডার করবেন।</p></div>
+    <script>
+        function copyNumber() {
+            const number = "01971284285";
+            navigator.clipboard.writeText(number).then(() => {
+                alert("Number copied to clipboard!");
+            });
+        }
+
+        function submitDetails() {
+            const selectedPackage = document.querySelector('input[name="diamond-package"]:checked');
+            const playerId = document.getElementById('player-id').value;
+            const senderNumber = document.getElementById('sender-number').value;
+            const transactionId = document.getElementById('transaction-id').value;
+
+            if (!selectedPackage || !playerId || !senderNumber || !transactionId) {
+                alert("Please fill in all fields and select a package!");
+                return;
+            }
+
+            // Show popup
+            const popup = document.getElementById('popup');
+            popup.style.display = 'block';
+        }
+
+        function closePopup() {
+            const popup = document.getElementById('popup');
+            popup.style.display = 'none';
+        }
+    </script>
+</body>
+</html>
